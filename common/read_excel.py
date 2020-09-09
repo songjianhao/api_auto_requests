@@ -9,7 +9,7 @@ class read_excel():
 
     '''读取Excel数据，并返回列表，用于测试框架'''
 
-    def __init__(self, file_name, sheet_name = 'sheet1'):
+    def __init__(self, file_name, sheet_name = 'Sheet1'):
         self.data = xlrd.open_workbook(file_name)
         self.table = self.data.sheet_by_name(sheet_name)
 
